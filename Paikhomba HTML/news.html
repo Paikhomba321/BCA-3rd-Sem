@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Newspaper Front Page</title>
+    <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Typography */
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f9f9f9;
+            transition: background-color 0.3s ease, color 0.3s ease;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            font-size: 28px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            font-size: 22px;
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 16px;
+            margin-bottom: 20px;
+        }
+
+        /* Layout */
+        header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        section {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        article {
+            flex: 1 1 300px;
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            overflow: hidden;
+            transition: box-shadow 0.3s ease;
+        }
+
+        article:hover {
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin-bottom: 15px;
+            border-radius: 10px;
+            transition: transform 0.3s ease;
+        }
+
+        img:hover {
+            transform: scale(1.05);
+        }
+
+        /* Dark Mode */
+        body.dark-mode {
+            background-color: #333;
+            color: #fff;
+        }
+
+        /* Anchor Styles */
+        a {
+            text-decoration: none;
+            color: inherit;
+            transition: color 0.3s ease;
+        }
+
+        a:hover {
+            color: #333; /* Change to desired hover color */
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            article {
+                flex: 1 1 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>My Newspaper</h1>
+        <label for="dark-mode-toggle">Dark Mode:</label>
+        <input type="checkbox" id="dark-mode-toggle">
+    </header>
+
+    <section>
+        <article>
+            <a href="breaking_news.html">
+                <h2>Breaking News</h2>
+                <a href="breaking_news.html">
+                    <img src="download.jpg" alt="Breaking News Image">
+                </a>
+                <p>This is a breaking news article. Stay tuned for updates. <a href="breaking_news.html">Read more</a></p>
+            </a>
+        </article>
+
+        <article>
+            <a href="weather_forecast.html">
+                <h2>Weather Forecast</h2>
+                <a href="weather_forecast.html">
+                    <img src="3-9-Extended-Forecast.webp" alt="Weather Forecast Image">
+                </a>
+                <p>Today's weather forecast: Sunny with a chance of rain in the evening. <a href="weather_forecast.html">Read more</a></p>
+            </a>
+        </article>
+
+        <article>
+            <a href="sports_news.html">
+                <h2>Sports News</h2>
+                <a href="sports_news.html">
+                    <img src="download (1).jpg" alt="Sports News Image">
+                </a>
+                <p>Latest sports news: Your favorite team wins the championship! <a href="sports_news.html">Read more</a></p>
+            </a>
+        </article>
+
+        <article>
+            <a href="technology_update.html">
+                <h2>Technology Update</h2>
+                <a href="technology_update.html">
+                    <img src="download (2).jpg" alt="Technology Update Image">
+                </a>
+                <p>Discover the latest advancements in the technology sector. <a href="technology_update.html">Read more</a></p>
+            </a>
+        </article>
+
+        <article>
+            <a href="entertainment_buzz.html">
+                <h2>Entertainment Buzz</h2>
+                <a href="entertainment_buzz.html">
+                    <img src="entertainment_buzz_hd_logo.png" alt="Entertainment Buzz Image">
+                </a>
+                <p>Get the scoop on celebrity news and entertainment updates. <a href="entertainment_buzz.html">Read more</a></p>
+            </a>
+        </article>
+
+        <article>
+            <a href="healthy_living_tips.html">
+                <h2>Healthy Living Tips</h2>
+                <a href="healthy_living_tips.html">
+                    <img src="a-to-z-health-tips-for-a-healthy-lifestyle-in-2023.png" alt="Healthy Living Tips Image">
+                </a>
+                <p>Learn how to lead a healthier lifestyle with these tips. <a href="healthy_living_tips.html">Read more</a></p>
+            </a>
+        </article>
+    </section>
+
+    <script>
+        const darkModeToggle = document.getElementById('dark-mode-toggle');
+
+        darkModeToggle.addEventListener('change', () => {
+            document.body.classList.toggle('dark-mode');
+        });
+    </script>
+</body>
+</html>

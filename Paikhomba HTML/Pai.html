@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time Table</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            text-align: center;
+            font-family: sans-serif;
+           
+        }
+        h1 {
+            text-align: center;
+            font-weight: bold;
+            font-family: sans-serif;
+            color: red;
+            font-weight: bold;
+        }
+        th, td{
+            padding: 8px;
+            border: 1px solid black;
+            width: 80px;
+            height: 50px;
+
+
+        }
+
+        .day {
+            font-weight: bold;
+        }
+        .Lunch {
+            transform: rotate(-90deg);
+        }
+        .DBMS {
+            background-color: rgb(215, 94, 248);
+        }
+        .WEB {
+            background-color: rgb(124, 236, 246);
+        }
+        .PS {
+            background-color: orange;
+        }
+        .V {
+            background-color: yellow;
+        }
+        .GEC {
+            background-color: rgb(4, 248, 4);
+        }
+    </style>
+</head>
+<body>
+    <h1>Time Table for BCA 4th Sem 'B'</h1>
+        <table align="center">
+        <tr>
+            <th>Day\Periods</th>
+            <th>1<br>9:00-9:50</th>
+            <th>2<br>9:50-10:40</th>
+            <th>3<br>10:40-11:30</th>
+            <th>4<br>11:30-12:20</th>
+            <th>12:20-1:00</th>
+            <th>5<br>1:00-1:50</th>
+            <th>6<br>1:50-2:40</th>
+            
+        </tr>
+        <tr>
+            <td class="day">Monday</td>
+            <td class="DBMS">DBMS</td>
+            <td class="WEB">WEB T</td>
+            <td class="PS">PS</td>
+            <td class="V">VAC:WD</td>
+            <td class="Lunch" rowspan="5">Lunch Break</td>
+            <td class="GEC">GEC</td> 
+            <td></td>            
+        </tr>
+        <tr>
+            <td class="day">Tuesday</td>
+            <td class="PS">PS</td>
+            <td class="WEB">WEB T</td>
+            <td class="DBMS">DBMS</td>
+            <td class="GEC">GEC</td> 
+            <td></td>  
+            <td></td>
+        </tr>
+        <tr>
+            <td class="day">Wednesday</td>
+            <td class="GEC">GEC</td>
+            <td class="WEB">WEB T</td>
+            <td colspan="2" bgcolor="pink">Practical</td>
+            <td class="PS">PS</td> 
+            <td></td>  
+        </tr>
+        <tr>
+            <td class="day">Thrusday</td>
+            <td class="GEC">GEC</td>
+            <td colspan="2" bgcolor="pink">Practical</td>
+            <td class="PS">PS</td>
+            <td class="DBMS">DBMS</td>
+            <td></td>   
+        </tr>
+        <tr>
+            <td class="day">Friday</td>
+            <td class="V">VAC:WD</td>
+            <td class="WEB">WEB T</td>
+            <td class="DBMS">DBMS</td>
+            <td class="PS">PS</td>
+            <td></td>
+            <td></td> 
+        </tr>
+    </table>
+</body>
+</html>

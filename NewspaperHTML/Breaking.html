@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Breaking News</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 0 20px;
+    }
+
+    .breaking-news {
+      background-color: #f8f8f8;
+      padding: 10px;
+      border-bottom: 1px solid #ccc;
+      position: relative;
+    }
+
+    .breaking-news:before {
+      content: "Breaking News:";
+      font-weight: bold;
+      color: red;
+      margin-right: 10px;
+    }
+
+    .breaking-news p {
+      margin: 0;
+    }
+
+    .news-item {
+      padding: 10px;
+      border-bottom: 1px solid #ccc;
+    }
+
+    .news-item:last-child {
+      border-bottom: none;
+    }
+
+    .news-title {
+      font-weight: bold;
+      margin: 0 0 5px;
+    }
+
+    .news-time {
+      color: #777;
+      font-size: 14px;
+    }
+
+    .news-content {
+      margin: 5px 0;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <div class="breaking-news">
+    <p>New information just in!</p>
+  </div>
+
+  <div class="news-item">
+    <h2 class="news-title">Title of Breaking News</h2>
+    <p class="news-time">May 16, 2024 - 12:00 PM</p>
+    <p class="news-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tempor justo nec felis rhoncus, at ultricies lorem suscipit.</p>
+  </div>
+
+  <div class="news-item">
+    <h2 class="news-title">Another Breaking News Story</h2>
+    <p class="news-time">May 16, 2024 - 11:30 AM</p>
+    <p class="news-content">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+  </div>
+</div>
+
+</body>
+</html>
